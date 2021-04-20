@@ -1,0 +1,1 @@
+heroku config:set HEROKU_PHP_PLATFORM_REPOSITORIES="https://mybucket.s3.amazonaws.com/heroku-18/packages.json"
