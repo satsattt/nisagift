@@ -1,6 +1,19 @@
 {
-  "name": "nisagift/index"
-  "require": {
-    "php": "^7.2.0"
-  }
+    "name": "satsattt/nisagift",
+    "homepage": "https://github.com/satsattt/nisagift",
+    "description": "demo repo",
+    "authors": [
+        {
+            "name": "satsattt",
+            "email": "satriops@student.ub.ac.id"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Example": "src/"
+        }
+    }
 }
