@@ -2,9 +2,8 @@
 <html>
 <head>
 	<title>Home</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript">
-		<!--
+ 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   	<script type="text/javascript">
 		function showTime() {
 		    var a_p = "";
 		    var today = new Date();
@@ -35,7 +34,6 @@
 		    return i;
 		}
 		setInterval(showTime, 500);
-		//-->
 		</script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="utf-8">
