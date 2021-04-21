@@ -118,6 +118,7 @@
     <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
     <div class="row d-flex justify-content-center px-3">
         <div class="card">
+	<p class="time-font mb-0 ml-4 mt-auto" id="clock"> <span class="sm-font">AM</span></p>
             <h2 class="ml-auto mr-4 mt-3 mb-0" id='City'></h2>
             <p class="ml-auto mr-4 mb-0 med-font"></p>
             <h1 class="ml-auto mr-4 large-font">
@@ -143,7 +144,6 @@ echo $sapa." ".$username;
     ?>
     </script>
 		</h1>
-            <p class="time-font mb-0 ml-4 mt-auto" id="clock"> <span class="sm-font">AM</span></p>
             <p class="ml-4 mb-4" id="date"></p>
         </div>
     </div>
