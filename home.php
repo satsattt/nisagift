@@ -1,75 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
- 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   	<script type="text/javascript">
-		function showTime() {
-		    var a_p = "";
-		    var today = new Date();
-		    var curr_hour = today.getHours();
-		    var curr_minute = today.getMinutes();
-		    var curr_second = today.getSeconds();
-		    if (curr_hour < 12) {
-		        a_p = "AM";
-		    } else {
-		        a_p = "PM";
-		    }
-		    if (curr_hour == 0) {
-		        curr_hour = 12;
-		    }
-		    if (curr_hour > 12) {
-		        curr_hour = curr_hour - 12;
-		    }
-		    curr_hour = checkTime(curr_hour);
-		    curr_minute = checkTime(curr_minute);
-		    curr_second = checkTime(curr_second);
-		 document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
-		    }
-
-		function checkTime(i) {
-		    if (i < 10) {
-		        i = "0" + i;
-		    }
-		    return i;
-		}
-		setInterval(showTime, 500);
-		</script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <style>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
 	body { 
 	background-color: rgb(30, 15, 33);
 	margin: 0;
 	padding: 0;
 }
 #client-testimonial-carousel {min-height: 200px;}
-    </style>
-    		<script>
-        <?php
-$username=$_POST['username'];
-$password=$_POST['password'];
-if(($username=="nisa"||$username=="satsat")&&$password=="2104"){
-}else{
-echo"<h1>Loginfails</h1>";
-}
-date_default_timezone_set('Asia/Jakarta');
-$jam=date("G");
-if($jam>=0&&$jam<=11)
-$sapa="Selamat Pagi,";
-else if($jam>=12&&$jam<=15)
-$sapa="Selamat Siang,";
-else if($jam>=16&&$jam<=18)
-$sapa="Selamat Sore,";
-else if($jam>=19&&$jam<=23)
-$sapa="Selamat Malam,";
-echo $sapa." ".$username;
-    ?>
-    </script>
+	</style>
 </head>
-<body>
- <div class="col-lg-10 offset-lg-1 pt-5 pb-5 bg-dark text-light">
+
+<div class="col-lg-10 offset-lg-1 pt-5 pb-5 bg-dark text-light">
   <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel" style="height:200px;">
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active text-center p-4">
@@ -128,10 +71,4 @@ echo $sapa." ".$username;
     </ol>
   </div>
 </div>
- 
-
-		<!-- Menampilkan Hari, Bulan dan Tahun -->
-		<br>
-		
-</body>
 </html>
