@@ -39,40 +39,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>
-        body {
-    color: #fff;
-    overflow-x: hidden;
-    height: 100%;
-    background-color: #CFD8DC;
-    background-repeat: no-repeat
+	body { 
+	background-color: rgb(30, 15, 33);
+	margin: 0;
+	padding: 0;
 }
 #client-testimonial-carousel {min-height: 200px;}
-.card {
-    background-image: linear-gradient(to bottom right, #9600FF,#AEBAF8);
-    background-size: cover;
-    width: 600px;
-    height: 350px;
-    border-radius: 20px;
-    box-shadow: 0px 8px 16px 4px #9E9E9E;
-    margin-top: 50px;
-    margin-bottom: 50px
-}
-
-.time-font {
-    font-size: 50px
-}
-
-.sm-font {
-    font-size: 18px
-}
-
-.med-font {
-    font-size: 28px
-}
-
-.large-font {
-    font-size: 60px
-}
     </style>
     		<script>
         <?php
