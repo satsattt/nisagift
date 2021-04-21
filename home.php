@@ -24,11 +24,12 @@
 
 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Notes : </h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body small">
-    ...
+    Halo, selamat 2 tahun ya, makasih udah sabar ngadepin aku yang kek gini.<br>
+    Semoga langgeng terus ya, amiin.
   </div>
 </div>
   </div>
