@@ -7,3 +7,4 @@ $_SESSION['user']=$username;
 }else{
      	echo '<script language="javascript">alert("Login anda gagal!"); 
 }
+?>
