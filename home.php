@@ -1,4 +1,16 @@
 <?php include 'akses.php';?>
+<?php
+date_default_timezone_set('Asia/Jakarta');
+$jam=date("G");
+if($jam>=0&&$jam<=11)
+$sapa="Selamat pagi, ";
+else if($jam>=12&&$jam<=15)
+$sapa="Selamat siang, ";
+else if($jam>=16&&$jam<=18)
+$sapa="Selamat sore, ";
+else if($jam>=19&&$jam<=23)
+$sapa="Selamat malam, ";
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,7 +30,7 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="../kittyLitter.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      Home
+      <?php echo $sapa.$_SESSION["user"]; ?>
     </a>
     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Notes<3</button>
 
