@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src=”https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js”></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style>
 	body { 
@@ -10,6 +14,7 @@
 }
 #client-testimonial-carousel {min-height: 200px;}
 	</style>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
 </head>
 
 <div class="col-lg-10 offset-lg-1 pt-5 pb-5 bg-dark text-light">
