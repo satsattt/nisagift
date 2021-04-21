@@ -112,7 +112,16 @@
     font-size: 60px
 }
     </style>
-    <script>
+    
+</head>
+<body>
+    <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+    <div class="row d-flex justify-content-center px-3">
+        <div class="card">
+            <h2 class="ml-auto mr-4 mt-3 mb-0" id='City'></h2>
+            <p class="ml-auto mr-4 mb-0 med-font"></p>
+            <h1 class="ml-auto mr-4 large-font">
+		<script>
         <?php
 $username=$_POST['username'];
 $password=$_POST['password'];
@@ -123,23 +132,17 @@ echo"<h1>Loginfails</h1>";
 date_default_timezone_set('Asia/Jakarta');
 $jam=date("G");
 if($jam>=0&&$jam<=11)
-$sapa="Selamat Pagi.";
+$sapa="Selamat Pagi,";
 else if($jam>=12&&$jam<=15)
-$sapa="Selamat Siang.";
+$sapa="Selamat Siang,";
 else if($jam>=16&&$jam<=18)
-$sapa="Selamat Sore.";
+$sapa="Selamat Sore,";
 else if($jam>=19&&$jam<=23)
-$sapa="Selamat Malam.";
+$sapa="Selamat Malam,";
+echo $sapa." ".$username;
     ?>
     </script>
-</head>
-<body>
-    <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
-    <div class="row d-flex justify-content-center px-3">
-        <div class="card">
-            <h2 class="ml-auto mr-4 mt-3 mb-0" id='City'></h2>
-            <p class="ml-auto mr-4 mb-0 med-font"></p>
-            <h1 class="ml-auto mr-4 large-font"></h1>
+		</h1>
             <p class="time-font mb-0 ml-4 mt-auto" id="clock"> <span class="sm-font">AM</span></p>
             <p class="ml-4 mb-4" id="date"></p>
         </div>
