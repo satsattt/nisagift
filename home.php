@@ -1,4 +1,4 @@
-<?php include 'login_process.php';?>
+<?php include 'akses.php';?>
 <!doctype html>
 <html lang="en">
   <head>
