@@ -4,29 +4,6 @@
 	<title>Home</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.js"></script>
     <script type="text/javascript">
-	     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        navigator.geolocation.getCurrentPosition(success, error);
-
-        function success(position) {
-
-            var GEOCODING = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + position.coords.latitude + '%2C' + position.coords.longitude + '&language=en';
-
-            $.getJSON(GEOCODING).done(function(location) {
-                $('#country').html(location.results[0].address_components[5].long_name);
-                $('#state').html(location.results[0].address_components[4].long_name);
-                $('#city').html(location.results[0].address_components[2].long_name);
-                $('#address').html(location.results[0].formatted_address);
-                $('#latitude').html(position.coords.latitude);
-                $('#longitude').html(position.coords.longitude);
-            })
-
-        }
-
-        function error(err) {
-            console.log(err)
-        }
-    </script>
-    <script type="text/javascript">
 		<!--
 		function showTime() {
 		    var a_p = "";
@@ -59,20 +36,6 @@
 		}
 		setInterval(showTime, 500);
 		//-->
-		</script>
-        <script type='text/javascript'>
-			<!--
-			var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
-			var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
-			var date = new Date();
-			var day = date.getDate();
-			var month = date.getMonth();
-			var thisDay = date.getDay(),
-			    thisDay = myDays[thisDay];
-			var yy = date.getYear();
-			var year = (yy < 1000) ? yy + 1900 : yy;
-			document.getElementById('date').innerHTML=thisDay + ', ' + day + ' ' + months[month] + ' ' + year;
-			//-->
 		</script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="utf-8">
