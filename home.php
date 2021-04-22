@@ -44,6 +44,7 @@ $sapa="Selamat malam, ";
 <label>
 Message:<input type="text" id="message">
 </label>
+    <button class="btn btn-primary" type="submit">Kirim</button>
   <script>
   constchat=document.querySelector('#chat');
 constmessage=document.querySelector('#message');
