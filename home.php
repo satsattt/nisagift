@@ -32,41 +32,15 @@ $sapa="Selamat malam, ";
       <img src="../kittyLitter.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
       <?php echo $sapa.$_SESSION["user"]; ?>
     </a>
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Chat</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Notes</button>
 
 <div class="offcanvas offcanvas-right" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasRightLabel">Chat </h5>
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Notes </h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body small">
-    <textarea id="chat" rows="20" cols="31"></textarea><br>
-<label>
-Message:<input type="text" id="message">
-</label>
-    <button class="btn btn-primary" type="submit">Kirim</button>
-  <script>
-  constchat=document.querySelector('#chat');
-constmessage=document.querySelector('#message');
-constbaseUrl='http://nisagift.herokuapp.com/home.php';
-functionreadChat(){
-fetch(`../chat-read.php`)
-.then(res=>res.text())
-.then(res=>{
-chat.value=res;
-});
-setTimeout(readChat,1000);
-};
-readChat();
-message.addEventListener('keyup',e=>{
-if(e.keyCode===13){
-fetch(`../chat-write.php`,{method:'post',headers:{
-'Content-Type':'application/x-www-form-urlencoded',},
-body:`text=${message.value}`
-});
-message.value='';
-}
-  </script>
+    
   </div>
 </div>
   </div>
