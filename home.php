@@ -40,9 +40,9 @@ $sapa="Selamat malam, ";
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body small">
-    <textareaid="chat"rows="20"cols="31"></textarea><br>
+    <textarea id="chat" rows="20" cols="31"></textarea><br>
 <label>
-Message:<inputtype="text"id="message">
+Message:<input type="text" id="message">
 </label>
   <script>
   constchat=document.querySelector('#chat');
