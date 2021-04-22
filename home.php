@@ -48,7 +48,7 @@ Message:<input type="text" id="message">
   <script>
   constchat=document.querySelector('#chat');
 constmessage=document.querySelector('#message');
-constbaseUrl='http://nisaku.herokuapp.com/home.php';
+constbaseUrl='http://nisagift.herokuapp.com/home.php';
 functionreadChat(){
 fetch(`../chat-read.php`)
 .then(res=>res.text())
@@ -58,7 +58,6 @@ chat.value=res;
 setTimeout(readChat,1000);
 };
 readChat();
-../chat.js
 message.addEventListener('keyup',e=>{
 if(e.keyCode===13){
 fetch(`../chat-write.php`,{method:'post',headers:{
