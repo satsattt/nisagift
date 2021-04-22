@@ -32,16 +32,41 @@ $sapa="Selamat malam, ";
       <img src="../kittyLitter.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
       <?php echo $sapa.$_SESSION["user"]; ?>
     </a>
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Notes<3</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Chat</button>
 
 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Notes : </h5>
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Chat </h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body small">
-    Halo, selamat 2 tahun ya, makasih udah sabar ngadepin aku yang kek gini.<br>
-    Semoga langgeng terus ya, amiin.
+    <textareaid="chat"rows="20"cols="31"></textarea><br>
+<label>
+Message:<inputtype="text"id="message">
+</label>
+  <script>
+  constchat=document.querySelector('#chat');
+constmessage=document.querySelector('#message');
+constbaseUrl='http://nisaku.herokuapp.com/home.php';
+functionreadChat(){
+fetch(`../chat-read.php`)
+.then(res=>res.text())
+.then(res=>{
+chat.value=res;
+});
+setTimeout(readChat,1000);
+};
+readChat();
+../chat.js
+message.addEventListener('keyup',e=>{
+if(e.keyCode===13){
+fetch(`../chat-write.php`,{method:'post',headers:{
+'Content-Type':'application/x-www-form-urlencoded',},
+body:`text=${message.value}`
+});
+message.value='';
+}
+  </script>
   </div>
 </div>
   </div>
